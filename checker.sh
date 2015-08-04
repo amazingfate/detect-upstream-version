@@ -7,6 +7,7 @@ gzip -d Sources.gz
 while read script
 do
     sh $script >> ../output.txt
+    echo "====分割线====" >> ../output.txt
 done < ../scripts.txt
 rm Sources
 rm current_package_version.txt
